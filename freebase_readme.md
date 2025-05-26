@@ -41,8 +41,12 @@ Please modify these values according to your server’s CPU and memory capacity,
 ```
 # ../bin/virtuoso-t -df # start the service in the shell
 ../bin/virtuoso-t  # start the service in the backend.
+```
+wait for 2-3mins.
+```
 ../bin/isql 1111 dba dba # run the database
-
+```
+```
 # 1、unzip the data and use rdf_loader to import
 SQL>
 ld_dir('.', 'FilterFreebase', 'http://freebase.com'); 
