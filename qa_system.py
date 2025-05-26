@@ -892,7 +892,7 @@ class QA_system:
             *message_filter_relations_with_triple,
             {"role": "user", "content": prompt}
         ]
-        #self.log_step("relation批量评估messages", messages)
+        
         
         # Get LLM response
         if self.LLM_type == 'llama':
@@ -910,7 +910,7 @@ class QA_system:
                 max_tokens=args.max_length,
                 engine=self.engine
             )
-        self.log_step("relation批量评估response", response)
+        
         # Parse response to get scores
         def extract_scores(response_text):
             scores = {}
