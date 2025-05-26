@@ -1410,7 +1410,6 @@ class QA_system:
             ]
         """
         # The first format, need to query entity_id 
-        self.log_step("并行推理格式使用第一种格式的triple", triple)
         # Extract entities from the triple, prioritize entities without the # symbol
         head = triple.get("head", "")
         tail = triple.get("tail", "")
